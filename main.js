@@ -1,6 +1,4 @@
 new Swiper('.swiper', {
-  // loop: true,
-
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -26,6 +24,17 @@ new Swiper('.swiper', {
   slidesPerView: 3,
   spaceBetween: 30,
   initialSlide: 2,
+  loop: true,
+  loopedSlides: 3,
+  // freeMode: true,
+
+  autoplay: {
+    delay: 1000,
+    // stopOnLastSlide: true,
+    disableOnInteraction: false,
+  },
+
+  speed: 800,
 
 });
 

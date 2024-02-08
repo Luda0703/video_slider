@@ -12,29 +12,20 @@
     <title>video_slider</title>
   </head>
   <body>
-    <div class="swiper">
-      <div class="video-slider swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./photo_2023-10-27_09-03-26.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./photo_2023-10-27_09-03-26.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./photo_2023-10-27_09-03-26.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./photo_2023-10-27_09-03-26.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./photo_2023-10-27_09-03-26.jpg" alt="" />
+    <main>
+      <div class="swiper">
+        <div class="video-slider swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="popup-overlay">
+        <div class="popup-content">
+          <div class="video-container"></div>
+          <button class="close-popup">Close</button>
         </div>
       </div>
-
-      <div class="swiper-pagination"></div>
-    </div>
-
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.4/dist/axios.min.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

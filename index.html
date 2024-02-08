@@ -13,17 +13,23 @@
   </head>
   <body>
     <main>
-      <div class="swiper">
-        <div class="video-slider swiper-wrapper"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="popup-overlay">
-        <div class="popup-content">
-          <div class="video-container"></div>
-          <button class="close-popup">Close</button>
+        <div class="swiper">
+            <div class="video-slider swiper-wrapper"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
         </div>
-      </div>
     </main>
+
+    <!-- Поп-ап -->
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <div class="video-container"></div>
+            <div class="popup-pagination"></div>
+            <button class="close-popup">Close</button>
+            <!-- <div class="popup-pagination"></div> -->
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@0.21.4/dist/axios.min.js"></script>
     <script type="module" src="./index.js"></script>

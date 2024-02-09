@@ -14,8 +14,8 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    // dynamicBullets: true,
   },
+ 
   keyboard: {
     enabled: true,
     onlyInViewport: true,
@@ -83,28 +83,28 @@ document.addEventListener("DOMContentLoaded", async function () {
   const videoContainer = document.querySelector('.video-container');
   const closePopupBtn = document.querySelector('.close-popup');
 
-  swiper.on('click', '.swiper-slide', function() {
+  const swiperPop = new Swiper('.popup-content', {
+    slidesPerView: 1,
+    pagination: {
+      el: ".popup-pagination",
+      clickable: true,
+    },
+
+  })
+
+  swiperPop.on('click', '.swiper-slide', function() {
     const videoUrl = this.getAttribute('data-video');
     const videoIframe = `<iframe src="${videoUrl}?autoplay=1" frameborder="0" allowfullscreen></iframe>`;
     videoContainer.innerHTML = videoIframe;
-    popupOverlay.style.display = 'flex';
+    // popupOverlay.style.display = 'flex';
+    
   });
 
   closePopupBtn.addEventListener('click', function() {
     videoContainer.innerHTML = '';
     popupOverlay.style.display = 'none';
   });
-
-  // Добавляем обработчик события для клика по текущему слайду в поп-апе
-  swiper.on('click', '.swiper-slide', function() {
-    const videoUrl = this.getAttribute('data-video');
-    const videoIframe = `<iframe src="${videoUrl}?autoplay=1" frameborder="0" allowfullscreen></iframe>`;
-    videoContainer.innerHTML = videoIframe;
-  });
 });
-
-
-
 
 
 

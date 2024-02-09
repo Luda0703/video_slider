@@ -1,7 +1,3 @@
-:root {
-  --swiper-pagination-color: #000;
-}
-
 html,
 body {
   position: relative;
@@ -15,7 +11,7 @@ body {
 }
 
 .container{
-    max-width: 1180px;
+    max-width: 1200px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 auto;
@@ -78,33 +74,26 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #333;
     display: none;
     justify-content: center;
     align-items: center;
 }
 
 .popup-content {
-    background-color: white;
+    max-width: 800px;
+    max-height: 800px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
+.popup-content .popup-pagination {
+    bottom: 0;
 }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.popup-pagination {
-    margin-top: 10px;
+.popup-content .popup-pagination span {
+    width: 10px;
+  height: 10px;
+  line-height: 15px;
+  font-size: 14px;
+  background-color: #fff;
 }

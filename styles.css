@@ -1,6 +1,5 @@
 html,
 body {
-  position: relative;
   height: 100%;
 }
 
@@ -26,8 +25,6 @@ body {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
 }
 
 .swiper-slide iframe {
@@ -43,7 +40,7 @@ body {
 }
 
 .swiper .swiper-pagination {
-  bottom: 0;
+  bottom: 50px;
 }
 
 .swiper .swiper-pagination-bullets span {
@@ -59,40 +56,10 @@ body {
   width: 100%;
   height: 400px;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    max-width: 800px;
-    max-height: 800px;
-    padding: 20px;
-}
-
-.popup-content .popup-pagination {
-    bottom: 0;
-}
-
-.popup-content .popup-pagination span {
-    width: 10px;
-  height: 10px;
-  line-height: 15px;
-  font-size: 14px;
-  background-color: #fff;
 }

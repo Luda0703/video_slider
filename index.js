@@ -39,8 +39,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-document.addEventListener("DOMContentLoaded", async function () {
-
+document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i < 8; i++) {
     const slide = document.createElement("div");
     slide.classList.add("swiper-slide");
@@ -57,8 +56,4 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     swiper.appendSlide(slide);
   }
-
 });
-
-
-
